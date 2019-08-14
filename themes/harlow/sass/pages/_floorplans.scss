@@ -1,0 +1,66 @@
+.page-template-floor-plans {
+	#floorplan-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-flow: wrap;
+		margin: 0 auto;
+		max-width: 1024px;
+		@include breakpoint(twelve) { max-width: 1440px; }
+		.unit-container {
+			text-align: center;
+			width: 100%;
+			margin: 0 0 40px;
+			@include breakpoint(tablet) { width: 50%; }
+			@include breakpoint(ten) { width: calc(100% / 3); }
+
+			// img { display: block; }
+			.info-container {
+				.name {
+					@include responsive-font-size($black, $black, 1.8);
+          font-weight: $bold;
+          text-transform: uppercase;
+          margin: 15px 0;
+				}
+				.unit-info {
+					@include responsive-font-size($black, $black, 1.5);
+				}
+				.button-wrap {
+					margin: 15px;
+				}
+			}
+			a {
+				.info-container {
+					.name {
+						@include responsive-font-size($black, $black, 1.8);
+	          font-weight: $bold;
+	          text-transform: uppercase;
+	          margin: 15px 0;
+					}
+					.unit-info {
+						@include responsive-font-size($black, $black, 1.5);
+					}
+					.button-wrap {
+						margin: 15px;
+					}
+				}
+				&:hover {
+					.info-container {
+						.name {
+							@include responsive-font-size($lightgreen, $lightgreen, 1.8);
+						}
+						.unit-info {
+							@include responsive-font-size($lightgreen, $lightgreen, 1.5);
+						}
+					}
+				}
+			}
+		}
+	}
+	#disclaimer {
+		margin: 25px auto 0;
+		max-width: 1024px;
+		text-align: center;
+		@include responsive-font-size($black, $black, 1.5);
+	}
+}

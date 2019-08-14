@@ -1,0 +1,230 @@
+#contact {
+	#main-content {
+		padding: 20px 20px 10px;
+		@include breakpoint(fourteen) { padding: 20px 50px 10px; }
+		h1 {
+			margin: 0 0 20px;
+		}
+	}
+	#contact-info {
+		padding: 10px 20px 20px;
+		@include breakpoint(tablet) { padding: 0 20px; }
+		@include breakpoint(ten) {
+			padding: 45px 30px;
+			display: flex;
+			flex-direction: row;
+		}
+		@include breakpoint(fourteen) { padding: 0 50px; }
+		@include box-sizing(border-box);
+		>div {
+			@include breakpoint(ten) { width: 50%; }
+		}
+		.contact-content {
+			@include responsive-font-size($black, $black, 1.4);
+			padding: 0 0 25px;
+			@include breakpoint(tablet) { padding: 0 0 50px; }
+			@include breakpoint(ten) { padding: 0 5% 0 0; }
+			a { @include responsive-font-size($teal, $darkbrown, 1.4); }
+			.address {
+				&:hover{ color: $black; }
+			}
+			.directions {
+				margin: 20px 0 0;
+				a {
+					text-transform: uppercase;
+					display: inline-block;
+					position: relative;	
+					.icon-arrow {
+						top: 0;
+						position: absolute;
+						right: -25px;
+						font-size: 1.8rem;
+						@extend .ease;
+						@include breakpoint(sixteen) {
+							@include font-size(2.6); 
+							right: -30px;
+						}
+					}
+					&:hover {
+						.icon-arrow {
+							right: -30px;
+							@include breakpoint(sixteen) {
+								right: -35px;
+							}
+						}
+					}
+				}
+			}
+			.phone {
+				margin: 20px 0	;
+				@include breakpoint(tablet) {
+					margin: 50px 0;
+				}
+				font-weight: $bold;
+			}
+			.office-hours {
+				margin: 0 0 20px 0;
+				@include breakpoint(tablet) {
+					margin: 0 0 50px 0;
+				}
+				h3 {
+					font-weight: $bold;
+					text-transform: uppercase;
+					padding: 0 0 5px; 
+				}
+				.day { padding: 0 0 5px; }
+			}
+			.schedule-tour, .social {
+				display: inline-block;
+			}
+			.social {
+				.icon {
+					padding: 0 0 0 15px;
+				}
+			}
+		}
+
+		.contact-form {
+			.frm_style_formidable-style.with_frm_style {
+				#form_contact-form {
+					.frm_form_fields  {
+						.frm_fields_container {
+							display: flex;
+							flex-direction: column;
+							.form-field {
+								margin: 0 0 20px;
+								font-family: brandon-grotesque, sans-serif;
+								font-style: normal;
+								position: relative;
+								label.frm_primary_label {
+									display: block;
+									font-weight: $bold;
+									text-transform: uppercase;
+									margin: 5px 0 0 5px;
+								}
+								.frm_error {
+									margin: 5px 0 0 5px;
+									@include static-font-size($red, $red, 1.2);
+									text-transform: uppercase;
+								}
+								input[type="text"],
+								input[type="email"],
+								input[type="tel"],
+								select,
+								textarea {
+									font-weight: $reg;
+									border-radius: 0;
+									border: 2px solid $lightgray;
+									display: block;
+									padding: 10px 15px;
+									height: auto;
+									@include appearance(none);
+									@include box-sizing(border-box);
+									@include responsive-font-size($lightgray, $lightgray, 1.4);
+								}	
+								.req {
+									color: $lightgray;
+									position: absolute;
+									bottom: 0;
+									right: 0;
+								}
+							}
+							.split {
+								display: flex;
+								flex-direction: row;
+								.form-field {
+									margin: 0 20px 20px 0;
+									&:last-of-type {
+										margin: 0 0 20px;
+									}
+								}
+							}
+
+							// Submit
+							.frm_submit {
+								text-align: right;
+								margin: 0 20px 0 0;
+								button.frm_button_submit {
+									display: inline-block;
+								  padding: 15px 50px 15px 20px;
+								  text-decoration: none;
+								  @include transform(skew(20deg));
+								  border: 3px solid;
+								  border-radius: 0;
+								  text-transform: uppercase;
+								  @include responsive_font_size($darkgreen, $darkbrown, 1.4);
+									.label {
+										display: block;
+								  	@include transform(skew(-20deg));
+										padding-right: 0;
+										@extend .ease;
+										position: relative;
+										.icon-arrow {
+											position: absolute;
+											right: -30px;
+											top: 0;
+											@extend .ease;
+										}
+									}
+									
+									&:hover {
+										background: none;
+										.label {
+											.icon-arrow {
+												right: -35px;
+											}
+										}
+									}
+								}							
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-template-thank-you {
+	#main-content {
+		h1.headline {
+			align-self: auto;
+			text-align: right;
+		}
+	}
+
+	.icons-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		.schedule-tour, .social {
+		  display: inline-block;
+		  a {
+		    color: $teal;
+		    @include font-size(2.5);
+		    &:hover {
+		      color: $darkgreen;
+		    }
+		  }
+		}
+		.social {
+		  a {
+		    display: inline-block;
+		    margin: 0 0 0 15px;
+		  }
+		}
+	}
+}
+
+.error404 {
+	#error404 {
+		#main-content {
+			.copy {
+				.button-wrap {
+					margin: 25px 0 0;
+				}
+			}
+		}
+	}
+}

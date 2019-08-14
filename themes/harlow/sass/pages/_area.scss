@@ -1,0 +1,56 @@
+#map-container {
+	display: flex;
+	flex-direction: row;
+	#categories-container {
+		display: none;
+		@include breakpoint(ten) {
+			height: 600px;
+			display: block;background: $darkgreen;
+			width: 250px;
+			padding: 40px;
+			@include box-sizing(border-box);
+			overflow: scroll;
+		}
+		#categories {
+			color: $white;
+			> li {
+				cursor: pointer;
+				border-bottom: 3px solid $white;
+				padding: 0 0 25px;
+				margin: 0 0 25px;
+				span {
+					@include static-font-size($white, $lightgreen, 1.6);
+					text-transform: uppercase;
+				}
+				ul.children {
+					display: none;
+					li {
+						padding: 10px 0 10px 15px;
+						span {
+							@include static-font-size($white, $lightgreen, 1.4);
+							text-transform: uppercase;
+						}
+					}
+				}
+				&:last-child {
+					border-bottom: 0;
+					padding: 0;
+					margin: 0;
+				}
+				&.active {
+					ul.children {
+						display: block;
+					}
+				}
+			}	
+		}
+	}
+	#map {
+		height: 350px;
+		width: 100%;
+		@include breakpoint(ten) {
+			width: calc(100% - 250px);
+			height: 600px;
+		}
+	}
+}

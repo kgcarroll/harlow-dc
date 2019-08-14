@@ -1,0 +1,186 @@
+
+.slideout {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+  @include breakpoint(ten) {
+    position: fixed;
+    max-width: 600px;
+  }
+  .outer-wrapper {
+    position: relative;
+    @include breakpoint(ten) {
+      display: flex;
+    }
+    .button-wrap {
+      position: absolute;
+      @include box-sizing(border-box);
+      padding: 10px 20px;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      @include breakpoint(ten){
+        width: auto;
+        position: relative;
+        writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        height: 105px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      &.half {
+        width: 50%;
+        @include breakpoint(ten){ width: auto; }
+      }
+      &.full {
+        width: 100%;
+        @include breakpoint(ten){ width: auto; }
+      }
+    }
+    .inner-wrap {
+      position: absolute;
+      width: 100%;
+      top: 35px;
+      padding: 25px 20px;
+      display: none;
+      @include box-sizing(border-box);
+      @include breakpoint(ten) {
+        display: block;
+        top: 0;
+        position: relative;
+      }
+    }
+  }
+}
+
+
+
+#signup {
+  @extend .ease;
+  @include breakpoint(ten) {
+    left: -550px;
+    &.active { left: 0px; }
+    &.hidden { left: -600px; }
+  }
+  .outer-wrapper {
+    flex-direction: row-reverse;
+    .button-wrap {
+      left: 0;
+      background: $darkbrown;
+    }
+    .inner-wrap {
+      background: $lightbrown;
+      @include breakpoint(ten) {
+        padding: 25px 10px;
+        @include flex;
+      }
+      // Signup Form
+      #frm_form_3_container {
+        align-self: center;
+        width: 520px; //fix of IE
+        #form_f8i6o {
+          fieldset {
+            padding: 0;
+            .frm_fields_container {
+              @include flex;
+              @include flex-direction(column);
+              @include breakpoint(ten) {
+                @include flex-direction(row);
+              }
+              .form-field {
+                margin: 10px 0 20px 0;
+                position: relative;
+                @include breakpoint(ten) {
+                  margin: 0 10px 0 0 ;
+                }
+                label.frm_primary_label {
+                  @include static-font-size($darkbrown, $darkbrown, 1.1);
+                  text-transform: uppercase;
+                  font-family: brandon-grotesque, sans-serif;
+                  position: absolute;
+                  top: -15px;
+                }
+                .frm_error {
+                  //bottom: -15px;
+                  text-transform: uppercase;
+                  position: absolute;
+                  @include static-font-size($white, $white, 1.1);
+                  @include opacity(.75);
+                }
+                input[type="text"],
+                input[type="email"] {
+                  height: auto;
+                  border: 0;
+                  background: $white;
+                  text-transform: uppercase;
+                  padding: 10px 15px;
+                  @include static-font-size($forms, $forms, 1.4);
+                  font-weight: $bold;
+                  @include box-sizing(border-box);
+                  @include appearance(none);
+                  @include input-placeholder {
+                    color: $forms;
+                  }
+                } 
+              }
+              .frm_submit {
+                margin-left: auto;
+                display: flex;
+                @include breakpoint(ten) {
+                  //padding: 0 0 0 10px;
+                }
+                button {
+                  @include appearance(none);
+                  @include border-radius(0);
+                  @include box-shadow($white 0 0 0 0);
+                  @include static-font-size($white, $white, 2.2);
+                  @extend .ease;
+                  background: none;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                  &:hover {
+                    color: $darkbrown;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#slideout {
+  @extend .ease;
+  @include breakpoint(ten) {
+    right: -550px;
+    &.active { right: 0px; }
+    &.hidden { right: -600px; }
+  }
+  .outer-wrapper {
+    .button-wrap {
+      right: 0;
+      background: $darkgreen;
+    }
+    .inner-wrap {
+      background: $lightgreen;
+      .content {
+        .title {
+          @include static-font-size($white, $white, 1.8);
+          text-transform: uppercase;
+          line-height: 1.5;
+          font-weight: $bold;
+          margin: 0 0 20px;
+        }
+        .copy {
+          @include static-font-size($white, $white, 1.6);
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

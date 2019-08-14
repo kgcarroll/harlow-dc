@@ -1,0 +1,139 @@
+// Footer Links
+#footer-links {
+  padding: 50px 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  border-bottom: 8px solid $white;
+  .links {
+    display: flex;
+    .button-wrap {
+      margin: 0 10px;
+      a {
+        color: $white;
+        &:hover { color: $darkgreen; }
+      }
+    }
+    &.solo {
+      .button-wrap { margin: 0; }
+    }
+  }
+  &.solid {  background: $darkgreen; }
+}
+
+#footer {
+  background: #005a70;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 20px;
+  @include breakpoint(tablet) {
+    padding: 0;
+    flex-direction: row;
+  }
+  .content {
+    &.left {
+      text-align: center;
+      padding: 20px 20px 10px;
+      @include breakpoint(tablet) {
+        text-align: right;
+        background: url('../images/footer-angle.png') no-repeat right top transparent;
+        padding: 50px 110px 10px 0;
+        width: 45%;
+      }
+      .schedule-tour, .social {
+        display: inline-block;
+        a {
+          color: $white;
+          @include font-size(2.5);
+          &:hover {
+            color: $lightgreen;
+          }
+        }
+      }
+      .social {
+        margin: 0 0 25px;
+        a {
+          display: inline-block;
+          margin: 0 0 0 15px;
+        }
+      }
+      .phone {
+        margin: 0 0 10px;
+        font-weight: $bold;
+      }
+      .phone, .address {
+        a {
+          text-transform: uppercase;
+          @include static-font-size($white, $darkgreen, 1.2);
+          @include breakpoint(nineteen) { @include font-size(1.6); }
+        }
+      }
+      .address {
+        margin: 0 0 10px;
+      }
+    }
+    &.right {
+      text-align: center;
+      padding: 15px 0;
+      @include breakpoint(tablet) {
+        display: flex;
+        align-items: center;
+        align-self: flex-end;
+        width: 55%;
+      }
+      >div {
+        padding: 0 15px 0 0;
+        display: inline-block;
+        &:last-of-type {
+          padding: 0;
+          display: block;
+          text-align: center;
+          margin: 10px 0 0;
+          @include breakpoint(ten) {
+            display: inline-block;
+            text-align: left;
+            margin: 0;
+          }
+        }
+      }
+      .management{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        @include breakpoint(tablet){
+          padding: 0 20px 0 0;
+          width:auto;
+        }
+        .urban-atlantic-logo{
+          height:75px;
+          padding: 0 20px;
+        }
+      }
+      .management {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .label {
+          @include static-font-size($white, $white, 1.2);
+          text-transform: uppercase;
+          @include breakpoint(nineteen) { @include font-size(1.6); }
+        }
+        a, span {
+          @include static-font-size($white, $darkgreen, 3);
+          padding-right: 10px;
+        }
+        .icon-vantage-management-logo{
+          font-size: 65px;
+        }
+      }
+      .eho, .accessibility { @include static-font-size($white, $white, 1.6); }
+      .privacy {
+        a {
+          @include static-font-size($white, $darkgreen, 1.2);
+          text-transform: uppercase;
+          @include breakpoint(nineteen) { @include font-size(1.6); }
+        }
+      }
+    }
+  }
+}

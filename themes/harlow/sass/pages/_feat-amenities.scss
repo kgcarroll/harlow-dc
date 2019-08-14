@@ -1,0 +1,60 @@
+// Features & Amenities
+#lists-wrapper {
+  h2 {
+    @include responsive-font-size($teal, $teal, 2.2);
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+  .lists {  
+    .list-row {
+      padding: 20px 0;
+      @include breakpoint(ten) {
+        padding: 40px 0;
+        display: flex;
+      }
+      @include breakpoint(sixteen) { padding: 60px 0; }
+      @include breakpoint(nineteen) { padding: 75px 0; }   
+      .content-wrap, .img-wrap {
+        img.list-image { width: 100%; }
+        @include breakpoint(ten) {
+          width: 50%;
+        }
+      }
+      &.odd { }
+      &.even {
+        flex-direction: row-reverse;
+      }
+      .content-wrap {
+        padding: 15px 5% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include breakpoint(ten) {
+          padding: 0 5%;
+        }
+        .button-wrap {
+          margin: 15px 0 0;
+          text-align: center;
+          @include breakpoint(ten) {
+            margin: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+#amenities{
+  &.container{
+    .pdf-container{
+      width:50%;
+      margin:-35px 0 35px 50%;
+      padding:0 0 0 35px;
+      .button-wrap{
+
+      }      
+    }
+
+  }
+}

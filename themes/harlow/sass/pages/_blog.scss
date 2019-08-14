@@ -1,0 +1,121 @@
+#blog.container, #single-post.container {
+	@include breakpoint(tablet) { padding-right: 0; }
+}
+
+.blog-wrapper {
+	@include breakpoint(tablet) {
+		display: flex;
+		flex-direction: row;
+	}
+	.left {
+		width: 100%;
+		@include breakpoint(tablet) {
+			padding: 0 5% 0 0;
+			width: calc(100% - 270px);
+		}
+		.post {
+			@include breakpoint(tablet) {
+				padding: 0 0 50px;
+			}
+		}
+	}
+	.right {
+		@include breakpoint(tablet) {
+			width: 270px;
+		}
+	}
+}
+
+.blog-wrapper {
+	.post-content {
+		@include breakpoint(tablet) {
+			display: flex;
+		}
+		.image {
+			max-width: 1470px;
+			@include breakpoint(tablet) {
+				padding: 0 5% 0 0;
+			}
+			img { width: 100%; display: block; height: auto; }
+		}
+		.content {
+			.title a {
+				@include responsive-font-size($black, $darkgreen, 2.8);
+	 			display: block;
+				text-transform: uppercase;
+	 			padding: 20px 0;
+	 			@include breakpoint(tablet) {
+	 				padding: 0 0 20px;
+	 			}
+			}
+			.date { 
+				@include static-font-size($black, $black, 1.8);
+	 			padding: 0 0 15px;
+				text-transform: uppercase;
+			}
+			.link a {
+				@include static-font-size($darkgreen, $lightgreen, 1.8);
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+#single-post {
+	.back-link {
+		width: 100%;
+		padding: 0 0 20px;
+		a {
+			@include static-font-size($darkgreen, $lightgreen, 2.4);
+			padding: 0 0 20px;
+			text-transform: uppercase;
+			span {
+				@include transform(rotate(180deg));
+				display: inline-block;
+				padding: 0 0 0 5px;
+				@include font-size(2.2);
+			}
+		}
+	}
+	.image {
+		img { width: 100%; display: block; height: auto; }
+	}
+	h1.post-title {
+		@include responsive-font-size($black, $black, 2.8);
+		margin: 20px 0;
+	}
+	.date {
+		@include responsive-font-size($black, $black, 1.6);
+		margin: 0 0 20px;
+	}
+}
+
+
+.sidebar {
+	background: $darkgreen;
+	padding: 50px 40px;
+	margin: 25px 0 0;
+	@include box-sizing(border-box);
+	@include breakpoint(tablet){
+		margin: 0;	
+	}
+	div {
+		h2 {
+			@include static-font-size($white, $white, 1.8);
+			text-transform: uppercase;
+		}
+		ul {
+			li {
+				padding: 5px 0;
+				a {
+					@include static-font-size($white, $lightgreen, 1.8);
+				}
+			}
+		}
+		&:first-of-type {
+			border-bottom: 3px solid $white;
+			padding:  0 0 25px;
+			margin: 0 0 25px;
+		}
+	}
+}

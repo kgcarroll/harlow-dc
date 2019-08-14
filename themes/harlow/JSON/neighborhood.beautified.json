@@ -1,0 +1,433 @@
+{
+    "categories": [ {
+        "name": "Shopping",
+        "marker": {
+            "width": 21,
+            "height": 21,
+            "color": "#a1673f"
+        },
+        "pois": [ {
+            "name": "Harris Teeter",
+            "url": "",
+            "address": {
+                "address": "401 M St SE, Washington, DC 20003",
+                "lat": "38.876173",
+                "lng": "-76.9998913"
+            },
+            "lat": 38.876173,
+            "lng": -76.9998913
+        }, {
+            "name": "Whole Foods Market",
+            "url": "",
+            "address": {
+                "address": "101 H St SE, Washington, DC 20003",
+                "lat": "38.8802899",
+                "lng": "-77.00485379999998"
+            },
+            "lat": 38.8802899,
+            "lng": -77.0048538
+        }, {
+            "name": "Safeway",
+            "url": "",
+            "address": {
+                "address": "1100 4th St SW, Washington, DC 20024",
+                "lat": "38.8776018",
+                "lng": "-77.01731330000001"
+            },
+            "lat": 38.8776018,
+            "lng": -77.0173133
+        }, {
+            "name": "CVS Pharmacy",
+            "url": "",
+            "address": {
+                "address": "1100 New Jersey Ave SE, Washington, DC 20003",
+                "lat": "38.8770439",
+                "lng": "-77.00381620000002"
+            },
+            "lat": 38.8770439,
+            "lng": -77.0038162
+        }, {
+            "name": "Steadfast Supply",
+            "url": "",
+            "address": {
+                "address": "301 Tingey Street #120 SE, Washington, DC 20003",
+                "lat": "38.8743259",
+                "lng": "-77.0014099"
+            },
+            "lat": 38.8743259,
+            "lng": -77.0014099
+        }, {
+            "name": "Harry's Reserve",
+            "url": "",
+            "address": {
+                "address": "909 New Jersey Ave SE, Washington, DC 20003",
+                "lat": "38.8789079",
+                "lng": "-77.00531899999999"
+            },
+            "lat": 38.8789079,
+            "lng": -77.005319
+        }, {
+            "name": "Willow",
+            "url": "",
+            "address": {
+                "address": "1331 4th St SE, Washington, DC 20003",
+                "lat": "38.8743105",
+                "lng": "-77.00093659999999"
+            },
+            "lat": 38.8743105,
+            "lng": -77.0009366
+        }, {
+            "name": "A Beautiful Closet",
+            "url": "",
+            "address": {
+                "address": "20 District Square SW Washington DC 20024",
+                "lat": "38.8800086",
+                "lng": "-77.0250911"
+            },
+            "lat": 38.8800086,
+            "lng": -77.0250911
+        } ]
+    }, {
+        "name": "Food & Drink",
+        "marker": {
+            "width": 21,
+            "height": 21,
+            "color": "#9f4949"
+        },
+        "pois": [ {
+            "name": "Bluejacket",
+            "url": "",
+            "address": {
+                "address": "300 Tingey St SE, Washington, DC 20003",
+                "lat": "38.8751743",
+                "lng": "-77.00147649999997"
+            },
+            "lat": 38.8751743,
+            "lng": -77.0014765
+        }, {
+            "name": "District Winery",
+            "url": "",
+            "address": {
+                "address": "385 Water St SE, Washington, DC 20003",
+                "lat": "38.8734421",
+                "lng": "-77.00071159999999"
+            },
+            "lat": 38.8734421,
+            "lng": -77.0007116
+        }, {
+            "name": "Gordon Beirsch Brewing Company",
+            "url": "",
+            "address": {
+                "address": "100 M St SE, Washington, DC 20003",
+                "lat": "38.8767448",
+                "lng": "-77.00543590000001"
+            },
+            "lat": 38.8767448,
+            "lng": -77.0054359
+        }, {
+            "name": "Philz Coffee",
+            "url": "",
+            "address": {
+                "address": "1331 4th St SE #101, Washington, DC 20003",
+                "lat": "38.8743105",
+                "lng": "-77.00093659999999"
+            },
+            "lat": 38.8743105,
+            "lng": -77.0009366
+        }, {
+            "name": "Osteria Morini",
+            "url": "",
+            "address": {
+                "address": "301 Water St SE, Washington, DC 20003",
+                "lat": "38.873408",
+                "lng": "-77.00147649999997"
+            },
+            "lat": 38.873408,
+            "lng": -77.0014765
+        }, {
+            "name": "Peet's Coffee",
+            "url": "",
+            "address": {
+                "address": "1115 New Jersey Ave SE, Washington, DC 20003",
+                "lat": "38.8773341",
+                "lng": "-77.0046418"
+            },
+            "lat": 38.8773341,
+            "lng": -77.0046418
+        }, {
+            "name": "Bardo Brewing",
+            "url": "",
+            "address": {
+                "address": "25 Potomac Ave SE, Washington D.C., DC 20003",
+                "lat": "38.871139",
+                "lng": "-77.00670300000002"
+            },
+            "lat": 38.871139,
+            "lng": -77.006703
+        }, {
+            "name": "Rose's Luxury",
+            "url": "",
+            "address": {
+                "address": "717 8th St SE, Washington, DC 20003",
+                "lat": "38.8806519",
+                "lng": "-76.99532349999998"
+            },
+            "lat": 38.8806519,
+            "lng": -76.9953235
+        }, {
+            "name": "Al's Famous Delicatessen",
+            "url": "",
+            "address": {
+                "address": "1003 8th St.SE, Washington, DC 20003",
+                "lat": "38.8779786",
+                "lng": "-76.9951997"
+            },
+            "lat": 38.8779786,
+            "lng": -76.9951997
+        }, {
+            "name": "The Brighton SW1",
+            "url": "",
+            "address": {
+                "address": "949 Wharf Street SW Washington DC 20024",
+                "lat": "38.8800363",
+                "lng": "-77.0262088"
+            },
+            "lat": 38.8800363,
+            "lng": -77.0262088
+        }, {
+            "name": "Requin",
+            "url": "",
+            "address": {
+                "address": "100 District Square SW Washington DC 20024",
+                "lat": "38.8797974",
+                "lng": "-77.02560890000001"
+            },
+            "lat": 38.8797974,
+            "lng": -77.0256089
+        }, {
+            "name": "Rappahannock Oyster Bar",
+            "url": "",
+            "address": {
+                "address": "1150 Maine Avenue SW Washington DC 20024",
+                "lat": "38.8812242",
+                "lng": "-77.02765979999998"
+            },
+            "lat": 38.8812242,
+            "lng": -77.0276598
+        }, {
+            "name": "Potomac Distilling Company",
+            "url": "",
+            "address": {
+                "address": "1130 Maine Avenue Washington DC 20024",
+                "lat": "38.8815092",
+                "lng": "-77.02738720000002"
+            },
+            "lat": 38.8815092,
+            "lng": -77.0273872
+        }, {
+            "name": "CAVA",
+            "url": "",
+            "address": {
+                "address": "52 M St. SE, Washington, DC 20003",
+                "lat": "38.8766381",
+                "lng": "-77.0070278"
+            },
+            "lat": 38.8766381,
+            "lng": -77.0070278
+        } ]
+    }, {
+        "name": "Entertainment",
+        "marker": {
+            "width": 21,
+            "height": 21,
+            "color": "#d7aa20"
+        },
+        "pois": [ {
+            "name": "Nationals Park",
+            "url": "",
+            "address": {
+                "address": "1500 S Capitol St SE, Washington, DC 20003",
+                "lat": "38.8728646",
+                "lng": "-77.00751809999997"
+            },
+            "lat": 38.8728646,
+            "lng": -77.0075181
+        }, {
+            "name": "Half Street Fairgrounds",
+            "url": "",
+            "address": {
+                "address": "25 M St. SE, Washington, DC 20003",
+                "lat": "38.8762456",
+                "lng": "-77.00803880000001"
+            },
+            "lat": 38.8762456,
+            "lng": -77.0080388
+        }, {
+            "name": "Top of the Yard Rooftop Bar & Bites",
+            "url": "",
+            "address": {
+                "address": "1265 1st St. SE, Washington, DC 20003",
+                "lat": "38.874856",
+                "lng": "-77.00638099999998"
+            },
+            "lat": 38.874856,
+            "lng": -77.006381
+        }, {
+            "name": "The Anthem",
+            "url": "",
+            "address": {
+                "address": "901 Wharf St SW, Washington D.C., DC 20024",
+                "lat": "38.880094",
+                "lng": "-77.02610900000002"
+            },
+            "lat": 38.880094,
+            "lng": -77.026109
+        }, {
+            "name": "Union Stage",
+            "url": "",
+            "address": {
+                "address": "740 Water Street SW Washington DC 20024",
+                "lat": "38.8786849",
+                "lng": "-77.02409569999998"
+            },
+            "lat": 38.8786849,
+            "lng": -77.0240957
+        }, {
+            "name": "Pearl Street Warehouse",
+            "url": "",
+            "address": {
+                "address": "33 Pearl Street SW Washington DC 20024",
+                "lat": "38.878838",
+                "lng": "-77.02396750000003"
+            },
+            "lat": 38.878838,
+            "lng": -77.0239675
+        } ]
+    }, {
+        "name": "Convenience",
+        "marker": {
+            "width": 21,
+            "height": 21,
+            "color": "#427645"
+        },
+        "pois": [ {
+            "name": "SunTrust Bank",
+            "url": "",
+            "address": {
+                "address": "100 M St. SE, Washington, DC 20003",
+                "lat": "38.8767448",
+                "lng": "-77.00543590000001"
+            },
+            "lat": 38.8767448,
+            "lng": -77.0054359
+        }, {
+            "name": "Bank of America ",
+            "url": "",
+            "address": {
+                "address": "55 M St. SE, Washington, DC 20003",
+                "lat": "38.8760356",
+                "lng": "-77.00714049999999"
+            },
+            "lat": 38.8760356,
+            "lng": -77.0071405
+        }, {
+            "name": "Capital One",
+            "url": "",
+            "address": {
+                "address": "1100 New Jersey Ave SE, Washington, DC  20003",
+                "lat": "38.8770439",
+                "lng": "-77.00381620000002"
+            },
+            "lat": 38.8770439,
+            "lng": -77.0038162
+        } ]
+    }, {
+        "name": "Health & Wellness",
+        "marker": {
+            "width": 21,
+            "height": 21,
+            "color": "#3487aa"
+        },
+        "pois": [ {
+            "name": "Banfield Pet Hospital",
+            "url": "",
+            "address": {
+                "address": "1212 4th St. SE, Washington, DC 20003",
+                "lat": "38.8754425",
+                "lng": "-77.00004580000001"
+            },
+            "lat": 38.8754425,
+            "lng": -77.0000458
+        }, {
+            "name": "Aura Spa",
+            "url": "",
+            "address": {
+                "address": "1212 4th St. SE, Washington, DC 20003",
+                "lat": "38.8754425",
+                "lng": "-77.00004580000001"
+            },
+            "lat": 38.8754425,
+            "lng": -77.0000458
+        } ]
+    }, {
+        "name": "Transportation",
+        "marker": {
+            "width": 21,
+            "height": 21,
+            "color": "#7d3abc"
+        },
+        "pois": [ {
+            "name": "Navy Yard-Ballpark Station",
+            "url": "",
+            "address": {
+                "address": "122 M St SE, Washington, DC 20003",
+                "lat": "38.876693",
+                "lng": "-77.00500899999997"
+            },
+            "lat": 38.876693,
+            "lng": -77.005009
+        } ]
+    }, {
+        "name": "Activities",
+        "marker": {
+            "width": 21,
+            "height": 21,
+            "color": "#cc3fad"
+        },
+        "pois": [ {
+            "name": "Canal Park",
+            "url": "",
+            "address": {
+                "address": "200 M St SE, Washington, DC 20003",
+                "lat": "38.8771057",
+                "lng": "-77.00311880000004"
+            },
+            "lat": 38.8771057,
+            "lng": -77.0031188
+        }, {
+            "name": "The Yards Park",
+            "url": "",
+            "address": {
+                "address": "355 Water St SE, Washington, DC 20003",
+                "lat": "38.8735546",
+                "lng": "-77.00107209999999"
+            },
+            "lat": 38.8735546,
+            "lng": -77.0010721
+        } ]
+    } ],
+    "property": {
+        "property_name": "Harlow",
+        "address": "1100 2nd Place, SE",
+        "city": "Washington",
+        "state": "DC",
+        "zip": "20003",
+        "lat": 38.8771777,
+        "lng": -77.0025114,
+        "property_map_marker": {
+            "url": "https://harlowdc.com/wp-content/uploads/2018/11/map-marker.png",
+            "width": 57,
+            "height": 57
+        }
+    }
+}

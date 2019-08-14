@@ -1,0 +1,15 @@
+.page-template-cookies {
+	#cookies {
+		.content {
+			max-width: 1024px;
+			@include breakpoint(ten) {
+				margin: 10% auto 0;
+			}
+		}
+	}
+	#footer {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+	}
+}

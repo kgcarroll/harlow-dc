@@ -1,0 +1,126 @@
+#gallery {
+	.gallery-container {
+		max-width: 1024px;
+		margin: 0 auto;
+		#categories {
+			background: $darkgreen;
+			@include breakpoint(ten) {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			li {
+				cursor: pointer;
+				text-transform: uppercase;
+				text-align: center;
+				padding: 10px;
+				@include static-font-size($white, $lightgreen, 1.4);
+				@include breakpoint(ten) {
+					text-align: left;
+					background: url('../images/cat-angle.png') no-repeat right top transparent;
+					padding: 13px 41px 14px 10px;
+					@include font-size(1.8);
+				}
+				&.active {
+					@include breakpoint(ten) {
+						position: relative;
+						&:after {
+							content: '';
+							height: 30px;
+							width: 30px;
+							background: $darkgreen;
+							@include transform(rotate(45deg));
+							display: block;
+							position: absolute;
+							bottom: -15px;
+							z-index: 9;
+							right: 0;
+							left: -31px;
+							margin: auto;
+						}
+					}
+				}
+				&:last-of-type {
+					background: none;
+			 	}
+			 	span {
+			 		position: relative;
+			 		z-index: 10;
+			 	}
+			}
+		}
+	}
+	#slick, #slick-thumbs {
+		position: relative;
+		.slick-arrow {
+			position: absolute;
+			z-index: 9;
+			top: 50%;
+			margin-top: -43px;
+			@include appearance(none);
+			background: none;
+			border: none;
+			@include static-font-size($darkgreen, $lightgreen, 3);
+			cursor: pointer;
+			@include breakpoint(ten) {
+				@include font-size(10);
+			}
+		}
+		.slick-prev {
+			left: -10px;
+			@include transform(rotate(180deg));
+			@include breakpoint(ten) {
+				left: -50px;
+			}
+		}
+		.slick-next {
+			right: -10px;
+			@include breakpoint(ten) {
+				right: -50px;
+			}
+		}
+		.slick-slide {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			.gallery-caption {
+				text-align: center;
+				width: 100%;
+				padding: 10px;
+				@include static-font-size($black, $black, 1.8);
+				@include box-sizing(border-box);
+				@include breakpoint(ten){
+					position: absolute;
+					bottom: 0;
+					background: rgba($white, .8);
+				}
+			}
+		}
+	}
+	#slick-thumbs {
+		margin: 25px 0 0;
+		display: none;
+		@include breakpoint(tablet) {
+			display: block;
+		}
+		.slick-arrow {
+			top: 50%;
+			margin-top: -26px;
+			@include static-font-size($darkgreen, $lightgreen, 5.2);
+		}
+		.slick-prev {
+			left: -20px;
+		}
+		.slick-next {
+			right: -20px;
+		}
+		.slick-track {
+			.slick-slide {
+				padding: 0 2px;
+				img { display: block; }
+			}
+		}
+	}
+
+}
